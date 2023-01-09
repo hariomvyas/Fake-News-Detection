@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fake News Detection</title>
+  <meta content="Fake News Detection" name="description">
+  <meta content="Fake News Detection " name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/fake-news.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: OnePage - v4.10.0
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Fake News Detection</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Abstract</a></li>
+          <li><a class="nav-link scrollto" href="#background">Motivation</a></li>
+          <li><a class="nav-link scrollto" href="#eda">EDA</a></li>
+          <li><a class="nav-link scrollto" href="#modeldevelopment">Model Development</a></li>
+          <li><a class="nav-link scrollto o" href="#insights">Insights</a></li>
+          <li><a class="nav-link scrollto" href="#conclusion">Conclusion</a></li>
+          <li><a class="nav-link scrollto" href="#futurework">Future Work</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#reference">References</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!--Abstract Start-->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-lg-9 text-center">
+            <h1>FAKE NEWS DETECTION</h1>
+            <hr>
+            <p style="text-align: justify;">The public and academic communities have both expressed interest in the subject of fake news. Such false information has the potential to influence public opinion, giving malicious groups the chance to influence the results of public events like elections. Automatically identifying fake news is a crucial yet difficult topic that is still little understood since the consequences are so high. However, there are three features of false news that are universally acknowledged: the language of an article, the user responses it receives, and the source users endorsing it. The success and generality of the work that has already been done has been severely constrained by its heavy reliance on customizing solutions to a single criterion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Abstract End-->
+
+    <!--Background Start-->
+    <section id="background" class="d-flex align-items-center">
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-lg-9 text-center">
+            <h2>BACKGROUND / MOTIVATION</h2>
+            <hr>
+            <p style="text-align: justify;">A very severe issue in our community is the exponential spread of fake news on social media. Typically, it is produced using the manipulation of photos, text, audio, and video. This suggests that a comprehensive approach is required for the detection of fake news. The use of social media for news consumption has pros and downsides. On the one hand, individuals seek out and consume news via social media due to its low cost, ease of access, and quick transmission of information. On the other side, it promotes the widespread dissemination of fake news, or low-quality news that contains deceptive information. The widespread dissemination of fake news has the potential to have very detrimental effects on people and society. As a result, the detection of fake news on social media has lately emerged as an area of research that is receiving a lot of interest. Social media brings unique characteristics and obstacles for fake news detection, rendering typical news media detection algorithms ineffective or irrelevant. Because identifying fake news on social media is a difficult and important topic, we did our project on Fake news detection. Additionally, we go over adjacent study fields, unresolved issues, and potential future research routes for fake news identification.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Background End-->
+
+    <!-- ======= EDA Section ======= -->
+    <section id="eda" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Explanatory Data Analysis</h2>
+          <p>.</p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/fake.png" class="img-fluid" alt="Dataframe containing all Fake News">
+              <div class="portfolio-info">
+                <h4>Dataframe containing all Fake News</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/fake.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dataframe containing all Fake News"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/true.png" class="img-fluid" alt="Dataframe containing all True News">
+              <div class="portfolio-info">
+                <h4>Dataframe containing all True News</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/true.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dataframe containing all True News"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/Data Distribution.png" class="img-fluid" alt="Category wise Data Distribution">
+              <div class="portfolio-info">
+                <h4>Categorywise Data Distribution</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/Data Distribution.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Category wise Data Distribution"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/Subject Distribution.png" class="img-fluid" alt="Distribution of Subjects">
+              <div class="portfolio-info">
+                <h4>Subject Distribution</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/Subject Distribution.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Distribution of Subjects"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/Yearly Data Distribution.png" class="img-fluid" alt="Yearly Data Distribution">
+              <div class="portfolio-info">
+                <h4>Yearly Data Distribution</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/Yearly Data Distribution.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Yearly Data Distribution"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/Datewise Distribution.png" class="img-fluid" alt="Datewise Distribution">
+              <div class="portfolio-info">
+                <h4>Datewise Distribution</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/Datewise Distribution.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End EDA Section -->
+
+    <!-- ======= Model Development Section ======= -->
+    <section id="modeldevelopment" class="testimonials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Model Development</h2>
+          <p>Model development is an iterative process, in which many models are derived, tested and built upon until a model fitting the desired criteria is built. Subsequent modelling work may need to begin the search at the same place as the original model building began, rather than where it finished. Here we have developed multiple models. We have trained and tested them to find best among them.</p>
+          <p>We will approach this project utilizing the State of the Art techniques suggested by BERT and a unique encoder made available by Google called Universal Sentence Encoder. In addition, PyCaret, a classic Machine Learning tool, will be used. PyCaret is growing in popularity because to its user-friendliness and intriguing capabilities.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  BERT is an open source machine learning framework for natural language processing (NLP). BERT is designed to help computers understand the meaning of ambiguous language in text by using surrounding text to establish context.
+                </p>
+                <h3>BERT</h3>
+                <h4>Google</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  The universal sentence encoder model encodes textual data into high dimensional vectors known as embeddings which are numerical representations of the textual data. It specifically targets transfer learning to other NLP tasks, such as text classification, semantic similarity, and clustering.
+                </p>
+                <h3>Universal Sentence Encoder</h3>
+                <h4>Google</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  The Random Forest Classifier can be used to solve for regression or classification problems. The random forest algorithm is made up of a collection of decision trees, and each tree in the ensemble is comprised of a data sample drawn from a training set with replacement, called the bootstrap sample.
+                </p>
+                <h3>Random Forest classifier</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  Extremely Randomized Trees Classifier(Extra Trees Classifier) is a type of ensemble learning technique which aggregates the results of multiple de-correlated decision trees collected in a “forest” to output it's classification result.
+                </p>
+                <h3>Extra Trees Classifier</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  LightGBM is a gradient boosting framework based on decision trees to increases the efficiency of the model and reduces memory usage. Gradient-based One Side Sampling Technique for LightGBM: Different data instances have varied roles in the computation of information gain.
+                </p>
+                <h3>Light Gradient Boosting Machine</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  Gradient boosting classifiers are a group of machine learning algorithms that combine many weak learning models together to create a strong predictive model. Decision trees are usually used when doing gradient boosting.
+                </p>
+                <h3>Gradient Boosting Classifier</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  Quadratic Discriminant Analysis (QDA) is a generative model. QDA assumes that each class follow a Gaussian distribution. The class-specific prior is simply the proportion of data points that belong to the class. The class-specific mean vector is the average of the input variables that belong to the class.
+                </p>
+                <h3>Quadratic Discriminant Analysis</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  The Naive Bayes is a classification algorithm that is suitable for binary and multiclass classification. Naïve Bayes performs well in cases of categorical input variables compared to numerical variables. It is useful for making predictions and forecasting data based on historical results.
+                </p>
+                <h3>Naive Bayes</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  The Ridge Classification is a technique used to analyze linear discriminant models. It is a form of regularization that penalizes model coefficients to prevent overfitting.
+                </p>
+                <h3>Ridge Classifier</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  Linear Discriminant Analysis or Normal Discriminant Analysis or Discriminant Function Analysis is a dimensionality reduction technique that is commonly used for supervised classification problems. It is used for modelling differences in groups i.e. separating two or more classes.
+                </p>
+                <h3>Linear Discriminant Analysis</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  Logistic regression is the correct type of analysis to use when you’re working with binary data. You know you’re dealing with binary data when the output or dependent variable is dichotomous or categorical in nature; in other words, if it fits into one of two categories (such as “yes” or “no”, “pass” or “fail”, and so on).
+                </p>
+                <h3>Logistic Regression</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  Linear SVM is used for linearly separable data, which means if a dataset can be classified into two classes by using a single straight line, then such data is termed as linearly separable data, and classifier is used called as Linear SVM classifier.
+                </p>
+                <h3>SVM - Linear Kernel</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  An AdaBoost classifier is a meta-estimator that begins by fitting a classifier on the original dataset and then fits additional copies of the classifier on the same dataset but where the weights of incorrectly classified instances are adjusted such that subsequent classifiers focus more on difficult cases.
+                </p>
+                <h3>Ada Boost Classifier</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  The k-nearest neighbors algorithm, also known as KNN or k-NN, is a non-parametric, supervised learning classifier, which uses proximity to make classifications or predictions about the grouping of an individual data point.
+                </p>
+                <h3>K Neighbors Classifier</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  A Decision Tree is a non-parametric supervised learning algorithm, which is utilized for both classification and regression tasks. It has a hierarchical, tree structure, which consists of a root node, branches, internal nodes and leaf nodes.
+                </p>
+                <h3>Decision Tree Classifier</h3>
+                <h4>Pycaret</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Insights Section ======= -->
+    <section id="insights" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Insights</h2>
+          <p>.</p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/histogram.png" class="img-fluid" alt="Histogram">
+              <div class="portfolio-info">
+                <h4>Histogram</h4>
+                <p>
+                  Histogram of the number of words and tokenizing the text.
+                </p>
+                <div class="portfolio-links">
+                  <a href="assets/img/histogram.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Histogram of the number of words and tokenizing the text"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/bert_classificationreport.png" class="img-fluid" alt="Distribution of Subjects">
+              <div class="portfolio-info">
+                <h4>BERT Classification Report</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/bert_classificationreport.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="BERT Classification Report"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/pca.png" class="img-fluid" alt="Yearly Data Distribution">
+              <div class="portfolio-info">
+                <h4>Principal Component Analysis (PCA)</h4>
+                <p>Principal Component Analysis (PCA) Dimensional Reduction</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/pca.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Principal Component Analysis (PCA)"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/compare_pycaretmodels.png" class="img-fluid" alt="Datewise Distribution">
+              <div class="portfolio-info">
+                <h4>Pycaret Model Comparison</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/compare_pycaretmodels.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pycaret Model Comparison"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/RandomForestClassifier_ClassificationReport.png" class="img-fluid" alt="Datewise Distribution">
+              <div class="portfolio-info">
+                <h4>Random Forest Classification Report</h4>
+                <p>Random Forest was the best model among all the models. So here is its Classification Report</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/RandomForestClassifier_ClassificationReport.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Random Forest Classification Report"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/RandomForestConfusionMatrix.png" class="img-fluid" alt="Random Forest Classifier Confusion Matrix">
+              <div class="portfolio-info">
+                <h4>Random Forest Classifier Confusion Matrix</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/RandomForestConfusionMatrix.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Random Forest Classifier Confusion Matrix"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/PowerBIDashboard.png" class="img-fluid" alt="Random Forest Classifier Confusion Matrix">
+              <div class="portfolio-info">
+                <h4>Random Forest Classifier Confusion Matrix</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/PowerBIDashboard.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Random Forest Classifier Confusion Matrix"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Insights Section -->
+
+    <!-- ======= Conclusion Section ======= -->
+    <section id="conclusion" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Conclusion</h2>
+          <p>After training and testing multipple models, Random Forest Classifier was the best among them. Its classification Report and Confusion Matrix can be seen in the Insights section.</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              We are living in an exciting time of Deep Learning. One fantastic aspect of it is that, despite how challenging it is to train a cutting-edge neural network, it has benefits.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Using a pretrained neural network is more simpler and quicker.</li>
+              <li><i class="ri-check-double-line"></i> It is simple to adjust it.</li>
+              <li><i class="ri-check-double-line"></i> State-of-the-art findings on our dataset are simple to acquire.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              The Universal Sentence Encoder and BERT were both implemented. The BERT fine-basic tuning's premise is straightforward. We have a model that performs really well in terms of classification and conceals the complexity of the method. To complete our particular objective, we use this incredibly effective model (called BERT) and fine-tune it.
+The Universal Sentence Encoder is a particular type of encoder that has been trained on a variety of classification tasks. It transforms sentences into vectors.
+            </p>
+            <p>
+              This dataset may undoubtedly benefit from more complex and efficient methods, such as utilising the complete text or extracting other features. In addition to what we are already doing, more can be done on this project in the future, as can be seen in the next part.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Conclusion Section -->
+
+    <!--Future Work Start-->
+    <section id="futurework" class="d-flex align-items-center">
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-lg-9 text-center">
+            <h2>Future Work</h2>
+            <hr>
+            <p style="text-align: justify;">The validity of information on the Internet has recently become one of the most important issue. By enabling users to freely exchange content, social networking sites have transformed the way that information is disseminated. It is nearly difficult to determine dependability in a timely manner due to the volume of information that is spread and the speed at which it does so, which emphasizes the necessity for automatic fake news detection systems. As discussed earlier, Fake news detection is such a sensitive problem which has a lot of consequences. So, it is very important to create a model which can help in detection of fake news. For the future work there are couple of things which can be done such as an application can be made in which with the help of API’s we can get the updates on the fake news which are determined by other software or applications that data can be retrieved and then used in our application. Also, in an application we can be a search bar in which certain values can be filled in different attributes such as date, Title, Subject, Place, and many more which can help to get the output of fake or True. Also, the information the application gets from other reliable sources can be ordered in a way where all the sources which are high rated and used majorly by the people can be considered legitimate which can ultimately help in news detection. With the help of NLP, we can create a model in which can predict the intention of the news that the intention is to spread something positive or negative. Also, on social media fake news is one of the biggest problems and to overcome that the application can be used through which the news which gets reported by a large number of people can be checked with the resources available and that can help to determine if the news is Fake or True and the news then can be deleted from social media.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Future Work End-->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Meet our team because of whom this project was successfully completed.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class='bx bx-male' ></i>
+              </div>
+              <h4><a href="">Mohammadaamir Tirmizi</a></h4>
+              <p>Master of Science in Information Systems, University of Maryland Baltimore County</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class='bx bx-female' ></i>
+              </div>
+              <h4><a href="">Ishani Mayur Patel</a></h4>
+              <p>Master of Science in Information Systems, University of Maryland Baltimore County</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class='bx bx-male' ></i>
+              </div>
+              <h4><a href="">Yashwanth Dasari</a></h4>
+              <p>Master of Science in Information Systems, University of Maryland Baltimore County</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Sevices Section -->
+
+    <!-- ======= Github Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>More on our Github Repository</h3>
+          <p>We have uploaded data, python notebook, images, insights and PowerBi dashboard to our Github Repository. Feel Free to look and learn more about our project.</p>
+          <a class="cta-btn" href="https://github.com/aamirtirmizi84/Fake-News-Detection-Project">Mohammadaamir's Github</a>
+          <a class="cta-btn" href="https://github.com/Ishani-Patel/Fake_News_Detection">Ishani's Github</a>
+        </div>
+      </div>
+    </section><!-- End Github Cta Section -->
+
+    <!-- ======= Reference Section ======= -->
+    <section id="reference" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>References</h2>
+          <p>Multiple academic references were used during development of this project. All the links of those references and resources are given below.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-link icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">A Comprehensive Review on Fake News Detection With Deep Learning<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                M. F. Mridha, A. J. Keya, M. A. Hamid, M. M. Monowar and M. S. Rahman, &quot;A Comprehensive Review on
+Fake News Detection With Deep Learning,&quot; in IEEE Access, vol. 9, pp. 156151-156170, 2021, doi:
+10.1109/ACCESS.2021.3129329.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up">
+              <i class="bx bx-link icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">A Hybrid Approach for Detecting Automated Spammers in Twitter<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  M. Fazil and M. Abulaish, &quot;A Hybrid Approach for Detecting Automated Spammers in Twitter,&quot; in IEEE
+                  Transactions on Information Forensics and Security, vol. 13, no. 11, pp. 2707-2719, Nov. 2018, doi:
+                  10.1109/TIFS.2018.2825958.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up">
+              <i class="bx bx-link icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Fake news detection using naive Bayes classifier<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  M. Granik and V. Mesyura, &quot;Fake news detection using naive Bayes classifier,&quot; 2017 IEEE First Ukraine
+                  Conference on Electrical and Computer Engineering (UKRCON), 2017, pp. 900-903, doi:
+                  10.1109/UKRCON.2017.8100379.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up">
+              <i class="bx bx-link icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Fake News Detection<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  A. Jain and A. Kasbe, &quot;Fake News Detection,&quot; 2018 IEEE International Students&#39; Conference on Electrical,
+                  Electronics and Computer Science (SCEECS), 2018, pp. 1-5, doi: 10.1109/SCEECS.2018.8546944.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up">
+              <i class="bx bx-link icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">FakeBERT: Fake news detection in social media with a BERT-based deep learning approach<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Kaliyar, R.K., Goswami, A. &amp; Narang, P. FakeBERT: Fake news detection in social media with a BERT-
+                  based deep learning approach. Multimed Tools Appl 80, 11765–11788 (2021).<a>https://doi.org/10.1007/s11042-020-10183-2</a>
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up">
+              <i class="bx bx-link icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Fake News Detection on Social Media: A Data Mining Perspective<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Kai Shu, Amy Sliva, Suhang Wang, Jiliang Tang, and Huan Liu. 2017. Fake News Detection on Social
+                  Media: A Data Mining Perspective. SIGKDD Explor. Newsl. 19, 1 (June 2017), 22–36.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up">
+              <i class="bx bx-link icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">SpotFake: A Multi-modal Framework for Fake News Detection<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  S. Singhal, R. R. Shah, T. Chakraborty, P. Kumaraguru and S. Satoh, &quot;SpotFake: A Multi-modal
+                  Framework for Fake News Detection,&quot; 2019 IEEE Fifth International Conference on Multimedia Big Data
+                  (BigMM), 2019, pp. 39-47, doi: 10.1109/BigMM.2019.00-44.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Fake News Detection</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+          Created by <a href="#">Mohammadaamir, Ishani and Yashwanth</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
